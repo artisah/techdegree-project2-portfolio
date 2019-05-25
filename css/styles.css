@@ -76,7 +76,8 @@ ul {
     padding-left: 0;
 }
 .main-nav li { 
-  background: white;
+  /* background: white; */
+  background: lightpink;
   margin-bottom: 10px;;
   text-align: center;
   padding-right: 20px;
@@ -89,6 +90,10 @@ ul {
     font-weight: 700;
     text-transform: uppercase;
     color: black;
+}
+
+.main-nav li a:hover {
+    color: rgb(252, 245, 251);
 }
 
 
@@ -168,6 +173,29 @@ footer {
 /* clearfix for IE 6 and 7 */
 .clearfix { *zoom: 1 ;} /* IE < 8 */
 
+/* Skills section styles */
+.skills-section {
+    background: rgb(247, 233, 245);
+    margin-left: -2.6%;
+    margin-right: -2.6%;
+}
+
+.skills-section ul {
+    list-style: none;
+    padding-left: 30px;
+}
+.skills-section ul li {
+    margin-bottom: 10px;
+}
+.skill-name {
+    font-weight: 700;
+    padding-right: 20px;
+}
+
+
+
+
+
 /* Media Queries */
 
 /* Media Query for tablets */
@@ -184,6 +212,7 @@ footer {
         font-size: 120%;
     }
 
+   /* Main navigation styles */
     .main-nav {
         text-align: center;
     }
@@ -196,7 +225,15 @@ footer {
     .main-nav li a {
         padding: 0;
         margin: 0;
+        width: 100%;
     }
+
+    .main-nav li a:hover { 
+        border-bottom: 1px solid #e67e22;
+        color: black;
+    }
+
+    /* Profile text and image styles */
     .profile-details img {
         width: 30%;
         float: right;
@@ -248,6 +285,12 @@ footer {
         margin: 0 auto;
     }
 
+    .skills-section ul {
+        padding-left: 200px;
+    }
+
+    
+
 }
 
 /* Media query for large screens */
@@ -256,7 +299,6 @@ footer {
     h1 {
         float: left;
         width: 30%;
-        /* margin-top: 18px; */
     }
 
     .main-nav {
@@ -270,10 +312,13 @@ footer {
         width: 33.33%;
     }
 
-
     .contact-section p {
         width: 70%;
         margin: 0 auto;
+    }
+
+    .skills-section ul {
+        padding-left: 350px;
     }
 
 }
