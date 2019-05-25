@@ -1,0 +1,278 @@
+/* Universal style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* basic style */
+body {
+    font-family: 'Roboto Condensed' 'Arial', sans-serif; 
+    line-height: 1.5; 
+    font-size: 20px;  
+    font-weight: 400;
+    background: #eee;
+}
+
+h1, 
+h2,
+h3 {
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-top: 0; /* To remove default margin  */
+}
+
+h1 {
+    font-size: 240%; 
+    text-transform: capitalize;   
+    
+}
+
+h2 {
+    font-size: 150%;
+    text-transform: uppercase;
+    
+}
+
+h3 {
+    font-size: 120%;
+    text-transform: capitalize;
+    margin-top: 5%;
+    padding-top: 2%;
+}
+
+header {
+    padding-top: 30px;
+}
+
+
+/* To make images responsive. */
+img {
+    display: block;
+    width: 100%;
+}
+
+section {
+    padding: 40px 0;
+}
+
+/* custom styles */
+
+/* wrapper syles */
+.wrapper {
+    width: 80%;
+    padding:  0 2%;
+    margin: 0 auto;
+    background:#faf9f9;
+    /* max-width: 900px; */
+    color:black; 
+   
+}
+
+/* navigation styles */
+ul {
+    padding-left: 0;
+}
+.main-nav li { 
+  background: white;
+  margin-bottom: 10px;;
+  text-align: center;
+  padding-right: 20px;
+}
+
+.main-nav li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+/* profile details styles */
+.profile-details {
+    text-align: center;
+}
+.profile-details img {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* portfolio section style */
+.portfolio-section {
+    background: white;
+    text-align: center; 
+    margin-left: -2.6%;
+    margin-right: -2.6%;
+}
+
+.portfolio-project {
+    padding: 3%;;
+}
+
+
+/* contact section style */
+.contact-section {
+    text-align: center;
+}
+
+.contact-section ul {
+    list-style: none;
+    
+}
+
+.contact-section a {
+    color: black;
+    padding: 2%;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* main footer section style */
+footer {
+    padding: 10px 0;
+    font-weight: 700;
+    padding-bottom: 6%;
+}
+
+.footer-name {
+  width: 40%;
+  float: left;
+  
+}
+
+.footer-top {
+    width: 46%;
+    float: right;
+    text-align: right;
+}
+.footer-nav {
+    display: none;
+}
+
+/* Float Clearfix */
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+/* clearfix for IE 6 and 7 */
+.clearfix {
+    zoom: 1;
+}
+
+/* Media Queries */
+
+/* Media Query for tablets */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 200%;
+    }
+
+    h2 {
+        font-size: 130%;
+    }
+
+    h3 {
+        font-size: 120%;
+    }
+
+    .main-nav {
+        text-align: center;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        background: #faf9f9; 
+    }
+
+    .main-nav li a {
+        padding: 0;
+        margin: 0;
+    }
+    .profile-details img {
+        width: 30%;
+        float: right;
+        margin: 20px 0;
+    }
+    .profile-details p {
+        width: 68%;
+        float: left;
+        text-align: left;
+    }   
+
+    /* To split portfolio section in 2 columns  */
+
+    .portfolio-project {
+        width: 48%;
+        float: left;
+    }
+
+    .footer-top {
+        display: none;
+    }
+
+    .footer-nav  {
+        display: block; /* to display hidden footer nav */
+        width: 58%;
+        float: right;
+        text-align: right;
+    }
+
+    .footer-nav li {
+       display: inline-block;
+       margin-right: 20px;  
+    }
+
+    .footer-nav ul {
+        margin: 0;
+    }
+
+    .footer-nav li a {
+        /* display: block; */
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 80%;
+        color: black;
+    }
+
+    .contact-section p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+/* Media query for large screens */
+
+@media (min-width: 1024px) {
+    h1 {
+        float: left;
+        width: 30%;
+        /* margin-top: 18px; */
+    }
+
+    .main-nav {
+        width: 55%;
+        float: right;
+    }
+
+    .portfolio-project {
+        float: left;
+        width: 33.33%;
+    }
+
+
+    .contact-section p {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+}
+
+
+
