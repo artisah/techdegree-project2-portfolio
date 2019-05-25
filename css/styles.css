@@ -7,7 +7,7 @@
 
 /* basic style */
 body {
-    font-family: 'Roboto Condensed' 'Arial', sans-serif; 
+    font-family: 'Roboto Condensed', 'Arial', sans-serif; 
     line-height: 1.5; 
     font-size: 20px;  
     font-weight: 400;
@@ -149,6 +149,11 @@ footer {
     float: right;
     text-align: right;
 }
+
+.footer-top a {
+    text-decoration: none;
+    color: black;
+}
 .footer-nav {
     display: none;
 }
@@ -161,9 +166,7 @@ footer {
     visibility: hidden;
 }
 /* clearfix for IE 6 and 7 */
-.clearfix {
-    zoom: 1;
-}
+.clearfix { *zoom: 1 ;} /* IE < 8 */
 
 /* Media Queries */
 
@@ -259,6 +262,7 @@ footer {
     .main-nav {
         width: 55%;
         float: right;
+        text-align: right;
     }
 
     .portfolio-project {
