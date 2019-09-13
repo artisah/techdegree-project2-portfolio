@@ -1,4 +1,4 @@
-// Author: Arti Sah  Front End Techdegree Program
+// Author: Arti Sah,  Front End Techdegree Program
 
 // Checked project in: Chorme 55 64-bit FireFox 50.0 & 49.0.1 Safari 10.0.2
 
